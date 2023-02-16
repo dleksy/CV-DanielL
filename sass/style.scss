@@ -1,0 +1,93 @@
+@import 'colors';
+@import 'animation';
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: $bg-color;
+}
+
+nav {
+	text-transform: uppercase;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.2);
+	a,
+	i {
+		color: $white;
+	}
+	.nav-link {
+		color: $white;
+	}
+
+	a:hover {
+		color: $main-color;
+	}
+
+	.nav-link:hover {
+		color: $main-color;
+	}
+	.navbar-nav .nav-link.active {
+		color: $main-color;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+		color: $white;
+	}
+}
+
+header {
+	.hero-img {
+		position: relative;
+		height: 50vh;
+		background-image: url(../img/new-york-city-gb7e9317df_1920.jpg);
+		background-size: cover;
+		background-position: 0% 98%;
+		z-index: 0;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -10;
+	}
+
+	 .hero-photo{
+		position: absolute;
+		background-image: url(../img/frontphoto.png);
+		top: 25%;
+		left: 50%;
+		height: 200px;
+		width: 200px;
+		background-size: cover;
+		background-position: center;
+		border-radius: 50%;
+		transform: translateX(-50%);
+		z-index: 20;
+	 }
+	 .download-box{
+		position: absolute;
+		left: 50%;
+		top: 70%;
+		transform: translateX(-50%);
+		z-index: 20;
+	 }
+	 .downloadcv{
+		border: none;
+		background-color: $main-color;
+	 }
+	 .downloadcv:hover{
+		text-decoration: none;
+	 }
+
+
+	}
