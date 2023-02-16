@@ -41,12 +41,17 @@ nav {
 		font-weight: bold;
 		color: $white;
 	}
+	.fa-bars{
+		padding: 15px;
+		color: $main-color;
+		font-size: 24px;
+	}
 }
 
 header {
 	.hero-img {
 		position: relative;
-		height: 50vh;
+		height: 100vh;
 		background-image: url(../img/new-york-city-gb7e9317df_1920.jpg);
 		background-size: cover;
 		background-position: 0% 98%;
@@ -57,37 +62,97 @@ header {
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.8);
 		z-index: -10;
 	}
 
-	 .hero-photo{
+	.hero-photo {
 		position: absolute;
 		background-image: url(../img/frontphoto.png);
 		top: 25%;
 		left: 50%;
-		height: 200px;
-		width: 200px;
+		height: 180px;
+		width: 180px;
 		background-size: cover;
 		background-position: center;
 		border-radius: 50%;
 		transform: translateX(-50%);
 		z-index: 20;
-	 }
-	 .download-box{
+	}
+	.hero-text {
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translateX(-50%);
+		color: white;
+		p {
+			text-align: center;
+			margin-bottom: 5px;
+		}
+	}
+	.download-box {
 		position: absolute;
 		left: 50%;
-		top: 70%;
+		top: 85%;
 		transform: translateX(-50%);
 		z-index: 20;
-	 }
-	 .downloadcv{
+	}
+	.btn-primary:hover {
+		background-color: $main-color;
+	}
+	.downloadcv {
 		border: none;
 		background-color: $main-color;
-	 }
-	 .downloadcv:hover{
-		text-decoration: none;
-	 }
-
-
 	}
+	.downloadcv:hover {
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 320px) {
+	header {
+		.hero-img {
+			.hero-photo {
+				top: 30%;
+			}
+
+			.hero-text {
+				top: 65%;
+			}
+			.download-box {
+				top: 85%;
+			}
+		}
+		.hero-text {
+			h2 {
+				font-size: 22px;
+			}
+		}
+	}
+}
+@media (max-width: 576px) {
+	header {
+		h2 {
+			font-size: 28px;
+		}
+		.hero-photo {
+			top: 30%;
+		}
+		.hero-text {
+			top: 60%;
+		}
+		.download-box {
+			top: 80%;
+		}
+	}
+}
+@media (min-width: 576px) {
+	header {
+		.hero-img {
+			height: 50vh;
+		}
+		.download-box {
+			margin-top: 10px;
+		}
+	}
+}

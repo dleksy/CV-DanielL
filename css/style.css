@@ -62,10 +62,15 @@ nav .navbar-brand {
   font-weight: bold;
   color: white;
 }
+nav .fa-bars {
+  padding: 15px;
+  color: #27bb60;
+  font-size: 24px;
+}
 
 header .hero-img {
   position: relative;
-  height: 50vh;
+  height: 100vh;
   background-image: url(../img/new-york-city-gb7e9317df_1920.jpg);
   background-size: cover;
   background-position: 0% 98%;
@@ -75,7 +80,7 @@ header .hero-shadow {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -10;
 }
 header .hero-photo {
@@ -83,20 +88,34 @@ header .hero-photo {
   background-image: url(../img/frontphoto.png);
   top: 25%;
   left: 50%;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   transform: translateX(-50%);
   z-index: 20;
 }
+header .hero-text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+header .hero-text p {
+  text-align: center;
+  margin-bottom: 5px;
+}
 header .download-box {
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 85%;
   transform: translateX(-50%);
   z-index: 20;
+}
+header .btn-primary:hover {
+  background-color: #27bb60;
 }
 header .downloadcv {
   border: none;
@@ -104,4 +123,41 @@ header .downloadcv {
 }
 header .downloadcv:hover {
   text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  header .hero-img .hero-photo {
+    top: 30%;
+  }
+  header .hero-img .hero-text {
+    top: 65%;
+  }
+  header .hero-img .download-box {
+    top: 85%;
+  }
+  header .hero-text h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  header h2 {
+    font-size: 28px;
+  }
+  header .hero-photo {
+    top: 30%;
+  }
+  header .hero-text {
+    top: 60%;
+  }
+  header .download-box {
+    top: 80%;
+  }
+}
+@media (min-width: 576px) {
+  header .hero-img {
+    height: 50vh;
+  }
+  header .download-box {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
