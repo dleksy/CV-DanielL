@@ -13,6 +13,16 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: $bg-color;
 }
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+.underline {
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
+	margin: 0 auto 40px;
+}
 
 nav {
 	text-transform: uppercase;
@@ -109,25 +119,64 @@ header {
 	}
 }
 .aboutme {
-	height: 50vh;
+	// height: 50vh;
 
 	.card {
 		border: none;
 	}
-	.card-title{
+	.card-title {
 		text-transform: uppercase;
 		font-weight: bold;
 	}
-	.card-text{
+	.card-text {
 		margin-top: 30px;
 	}
-	.row{
+	.row {
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
-	.info-desc{
+	.info-desc {
 		font-weight: bold;
 	}
+}
+
+.experience {
+	background-color: $bg-color;
+	.job-box {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.card {
+		margin: auto;
+	}
+	.logo {
+		background-color: $main-color;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		color: white;
+	}
+	.company {
+		font-weight: bold;
+		font-size: 1.25rem;
+		padding-bottom: 10px;
+	}
+}
+.testcontainer {
+	// background-color: tomato;
+	height: 100px;
+}
+.yellow {
+	background-color: yellow;
+	height: auto;
+	// width: 100%;
+}
+.blue {
+	background-color: blue;
+	height: auto;
+	// width: 100%;
 }
 
 @media (max-width: 320px) {
@@ -151,6 +200,7 @@ header {
 		}
 	}
 }
+
 @media (max-width: 576px) {
 	header {
 		h2 {
@@ -174,6 +224,24 @@ header {
 		}
 		.download-box {
 			margin-top: 10px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.experience {
+		.card-body {
+			padding-left: 30px;
+		}
+		.position{
+			padding-bottom: 15px;
+			font-size: 24px;
+		}
+	}
+}
+@media( max-width: 767px) {
+	.experience{
+		.logo{
+			height: 100px;
 		}
 	}
 }

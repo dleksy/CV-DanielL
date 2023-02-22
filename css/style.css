@@ -37,6 +37,18 @@ body {
   background-color: #ebecf2;
 }
 
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: #43d47b;
+  margin: 0 auto 40px;
+}
+
 nav {
   text-transform: uppercase;
   z-index: 1;
@@ -50,10 +62,10 @@ nav .nav-link {
   color: white;
 }
 nav a:hover {
-  color: #78d69c;
+  color: #43d47b;
 }
 nav .nav-link:hover {
-  color: #78d69c;
+  color: #43d47b;
 }
 nav .navbar-nav .nav-link.active {
   color: rgb(70, 173, 70);
@@ -64,7 +76,7 @@ nav .navbar-brand {
 }
 nav .fa-bars {
   padding: 15px;
-  color: #78d69c;
+  color: #43d47b;
   font-size: 24px;
 }
 
@@ -115,19 +127,16 @@ header .download-box {
   z-index: 20;
 }
 header .btn-primary:hover {
-  background-color: #78d69c;
+  background-color: #43d47b;
 }
 header .downloadcv {
   border: none;
-  background-color: #78d69c;
+  background-color: #43d47b;
 }
 header .downloadcv:hover {
   text-decoration: none;
 }
 
-.aboutme {
-  height: 50vh;
-}
 .aboutme .card {
   border: none;
 }
@@ -144,6 +153,45 @@ header .downloadcv:hover {
 }
 .aboutme .info-desc {
   font-weight: bold;
+}
+
+.experience {
+  background-color: #ebecf2;
+}
+.experience .job-box {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.experience .card {
+  margin: auto;
+}
+.experience .logo {
+  background-color: #43d47b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+.experience .company {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-bottom: 10px;
+}
+
+.testcontainer {
+  height: 100px;
+}
+
+.yellow {
+  background-color: yellow;
+  height: auto;
+}
+
+.blue {
+  background-color: blue;
+  height: auto;
 }
 
 @media (max-width: 320px) {
@@ -180,5 +228,19 @@ header .downloadcv:hover {
   }
   header .download-box {
     margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .experience .card-body {
+    padding-left: 30px;
+  }
+  .experience .position {
+    padding-bottom: 15px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .experience .logo {
+    height: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
