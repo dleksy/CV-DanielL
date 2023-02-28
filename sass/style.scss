@@ -27,7 +27,7 @@ h2 {
 nav {
 	text-transform: uppercase;
 	z-index: 1;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.8);
 	a,
 	i {
 		color: $white;
@@ -51,12 +51,18 @@ nav {
 		font-weight: bold;
 		color: $white;
 	}
+	.navbar-brand:hover{
+		color: $white;
+	}
+	}
 	.fa-bars {
 		padding: 15px;
 		color: $main-color;
 		font-size: 24px;
 	}
-}
+	.navbar-toggler{
+		color: $main-color;
+	}
 
 header {
 	.hero-img {
@@ -118,11 +124,19 @@ header {
 		text-decoration: none;
 	}
 }
+
+.linkedin-placeholder{
+	font-size: 36px;
+	i{
+		color:#0e76a8
+	};
+}
 .aboutme {
 	// height: 50vh;
 
 	.card {
 		border: none;
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, .4);
 	}
 	.card-title {
 		text-transform: uppercase;
@@ -142,12 +156,14 @@ header {
 
 .experience {
 	background-color: $bg-color;
+	
 	.job-box {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 	.card {
 		margin: auto;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
 	}
 	.logo {
 		background-color: $main-color;
@@ -164,21 +180,153 @@ header {
 		padding-bottom: 10px;
 	}
 }
-.testcontainer {
-	// background-color: tomato;
-	height: 100px;
+
+.education {
+	position: relative;
+	ul.timeline {
+		list-style-type: none;
+		position: relative;
+	}
+	ul.timeline:before {
+		content: ' ';
+		background: #d4d9df;
+		display: inline-block;
+		position: absolute;
+		left: 29px;
+		width: 2px;
+		height: 100%;
+		z-index: 400;
+	}
+	ul.timeline > li {
+		margin: 20px 0;
+		padding-left: 20px;
+	}
+	ul.timeline > li:before {
+		content: ' ';
+		background: white;
+		display: inline-block;
+		position: absolute;
+		border-radius: 50%;
+		border: 3px solid $main-color;
+		left: 20px;
+		width: 20px;
+		height: 20px;
+		z-index: 400;
+	}
+
+	background-image: url(/img/black-g09d47c7da_1920.jpg);
+	background-attachment: fixed;
+	.school {
+		color: white;
+	}
+
+	.education-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 0;
+	}
+	.container {
+		h2,
+		p {
+			position: relative;
+			color: white;
+			z-index: 0;
+		}
+	}
+
+	.underline {
+		z-index: 0;
+	}
+	.school-year {
+		color: white;
+	}
 }
-.yellow {
-	background-color: yellow;
-	height: auto;
-	// width: 100%;
-}
-.blue {
-	background-color: blue;
-	height: auto;
-	// width: 100%;
+.skills {
+	background-color: $bg-color;
+	// height: 100vh;
+
+	.progress-bar {
+		position: relative;
+		height: 20px;
+		width: 100%;
+		background-color: white;
+		border-radius: 10px;
+	}
+	.skill-box {
+		p {
+			display: inline-block;
+			text-transform: uppercase;
+			// font-weight: bold;
+		}
+		.percent{
+			text-align: right;
+		}
+		padding: 0px 30px;
+
+		// margin: 5px;
+	}
+	.real-progress{
+		position: absolute;
+		background-color: $main-color;
+		height: 100%;
+		// width: 50%;
+	}
+
+	.text{
+		display: flex;
+		justify-content: space-between;
+	}
+	.html-bar{
+		width: 80%;
+	}
+	.css-bar{
+		width: 80%;
+	}
+	.js-bar{
+		width: 35%;
+	}
+	.bootstrap-bar{
+		width: 70%;
+	}
+	.python-bar{
+		width: 40%;
+	}
+	.sql-bar{
+		width: 80%;
+	}
+
+	.skill-general{
+		// background-color: $bg-color;
+		
+		.box-abilities{
+			// border: 1px solid black;
+			margin: 20px 10px;
+			background-color: white;
+			padding: 20px 10px;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+			transition: transform 0.5s;
+			// flex-wrap: nowrap;
+			
+		}
+		.box-abilities:hover{
+			transform: scale(1.05);
+		}
+	}
+	.fa-solid{
+		font-size: 36px;
+		color: $main-color;
+	}
+
+
+
+
 }
 
+footer{
+	background-color: $main-color;
+}
 @media (max-width: 320px) {
 	header {
 		.hero-img {
@@ -232,15 +380,21 @@ header {
 		.card-body {
 			padding-left: 30px;
 		}
-		.position{
+		.position {
 			padding-bottom: 15px;
 			font-size: 24px;
 		}
 	}
+	.education {
+		.school {
+			font-size: 24px;
+			padding-bottom: 5px;
+		}
+	}
 }
-@media( max-width: 767px) {
-	.experience{
-		.logo{
+@media (max-width: 767px) {
+	.experience {
+		.logo {
 			height: 100px;
 		}
 	}

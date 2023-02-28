@@ -52,7 +52,7 @@ h2 {
 nav {
   text-transform: uppercase;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 nav a,
 nav i {
@@ -74,10 +74,18 @@ nav .navbar-brand {
   font-weight: bold;
   color: white;
 }
-nav .fa-bars {
+nav .navbar-brand:hover {
+  color: white;
+}
+
+.fa-bars {
   padding: 15px;
   color: #43d47b;
   font-size: 24px;
+}
+
+.navbar-toggler {
+  color: #43d47b;
 }
 
 header .hero-img {
@@ -137,8 +145,16 @@ header .downloadcv:hover {
   text-decoration: none;
 }
 
+.linkedin-placeholder {
+  font-size: 36px;
+}
+.linkedin-placeholder i {
+  color: #0e76a8;
+}
+
 .aboutme .card {
   border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .aboutme .card-title {
   text-transform: uppercase;
@@ -164,6 +180,7 @@ header .downloadcv:hover {
 }
 .experience .card {
   margin: auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .experience .logo {
   background-color: #43d47b;
@@ -180,18 +197,128 @@ header .downloadcv:hover {
   padding-bottom: 10px;
 }
 
-.testcontainer {
-  height: 100px;
+.education {
+  position: relative;
+  background-image: url(/img/black-g09d47c7da_1920.jpg);
+  background-attachment: fixed;
+}
+.education ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+.education ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+.education ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+.education ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #43d47b;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+.education .school {
+  color: white;
+}
+.education .education-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.education .container h2,
+.education .container p {
+  position: relative;
+  color: white;
+  z-index: 0;
+}
+.education .underline {
+  z-index: 0;
+}
+.education .school-year {
+  color: white;
 }
 
-.yellow {
-  background-color: yellow;
-  height: auto;
+.skills {
+  background-color: #ebecf2;
+}
+.skills .progress-bar {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.skills .skill-box {
+  padding: 0px 30px;
+}
+.skills .skill-box p {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.skills .skill-box .percent {
+  text-align: right;
+}
+.skills .real-progress {
+  position: absolute;
+  background-color: #43d47b;
+  height: 100%;
+}
+.skills .text {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .html-bar {
+  width: 80%;
+}
+.skills .css-bar {
+  width: 80%;
+}
+.skills .js-bar {
+  width: 35%;
+}
+.skills .bootstrap-bar {
+  width: 70%;
+}
+.skills .python-bar {
+  width: 40%;
+}
+.skills .sql-bar {
+  width: 80%;
+}
+.skills .skill-general .box-abilities {
+  margin: 20px 10px;
+  background-color: white;
+  padding: 20px 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s;
+}
+.skills .skill-general .box-abilities:hover {
+  transform: scale(1.05);
+}
+.skills .fa-solid {
+  font-size: 36px;
+  color: #43d47b;
 }
 
-.blue {
-  background-color: blue;
-  height: auto;
+footer {
+  background-color: #43d47b;
 }
 
 @media (max-width: 320px) {
@@ -237,6 +364,10 @@ header .downloadcv:hover {
   .experience .position {
     padding-bottom: 15px;
     font-size: 24px;
+  }
+  .education .school {
+    font-size: 24px;
+    padding-bottom: 5px;
   }
 }
 @media (max-width: 767px) {
