@@ -137,6 +137,10 @@ header {
 	.card {
 		border: none;
 		box-shadow: 0px 5px 5px rgba(0, 0, 0, .4);
+		overflow: hidden;
+	}
+	.card-group{
+		overflow: hidden;
 	}
 	.card-title {
 		text-transform: uppercase;
