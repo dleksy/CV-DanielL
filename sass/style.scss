@@ -12,6 +12,10 @@ body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	background-color: $bg-color;
+	overflow-x: hidden;
+}
+.container{
+	overflow: hidden;
 }
 h2 {
 	text-transform: uppercase;
@@ -51,20 +55,23 @@ nav {
 		font-weight: bold;
 		color: $white;
 	}
-	.navbar-brand:hover{
+	.navbar-brand:hover {
 		color: $white;
 	}
-	}
-	.fa-bars {
-		padding: 15px;
-		color: $main-color;
-		font-size: 24px;
-	}
-	.navbar-toggler{
-		color: $main-color;
-	}
-
+}
+.fa-bars {
+	padding: 15px;
+	color: $main-color;
+	font-size: 24px;
+}
+.navbar-toggler {
+	color: $main-color;
+}
+section {
+	overflow-x: hidden;
+}
 header {
+	
 	.hero-img {
 		position: relative;
 		height: 100vh;
@@ -125,53 +132,50 @@ header {
 	}
 }
 
-.linkedin-placeholder{
+.linkedin-placeholder {
 	font-size: 36px;
-	i{
-		color:#0e76a8
-	};
+	i {
+		color: #0e76a8;
+	}
 }
 .aboutme {
 	// height: 50vh;
-
 	.card {
 		border: none;
-		box-shadow: 0px 5px 5px rgba(0, 0, 0, .4);
-		overflow: hidden;
-	}
-	.card-group{
-		overflow: hidden;
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 	}
 	.card-title {
 		text-transform: uppercase;
 		font-weight: bold;
-		overflow: hidden;
 	}
 	.card-text {
 		margin-top: 30px;
-		overflow: hidden;
 	}
 	.row {
 		margin-top: 30px;
 		margin-bottom: 30px;
-		overflow: hidden;
 	}
 	.info-desc {
 		font-weight: bold;
 	}
-
+	.fade-left {
+		overflow-x: hidden;
+	}
+	.fade-right {
+		overflow-x: hidden;
+	}
 }
 
 .experience {
 	background-color: $bg-color;
-	
+
 	.job-box {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 	.card {
 		margin: auto;
-		box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 	}
 	.logo {
 		background-color: $main-color;
@@ -268,71 +272,66 @@ header {
 			text-transform: uppercase;
 			// font-weight: bold;
 		}
-		.percent{
+		.percent {
 			text-align: right;
 		}
 		padding: 0px 30px;
 
 		// margin: 5px;
 	}
-	.real-progress{
+	.real-progress {
 		position: absolute;
 		background-color: $main-color;
 		height: 100%;
 		// width: 50%;
 	}
 
-	.text{
+	.text {
 		display: flex;
 		justify-content: space-between;
 	}
-	.html-bar{
+	.html-bar {
 		width: 80%;
 	}
-	.css-bar{
+	.css-bar {
 		width: 80%;
 	}
-	.js-bar{
+	.js-bar {
 		width: 35%;
 	}
-	.bootstrap-bar{
+	.bootstrap-bar {
 		width: 70%;
 	}
-	.python-bar{
+	.python-bar {
 		width: 40%;
 	}
-	.sql-bar{
+	.sql-bar {
 		width: 80%;
 	}
 
-	.skill-general{
+	.skill-general {
 		// background-color: $bg-color;
-		
-		.box-abilities{
+
+		.box-abilities {
 			// border: 1px solid black;
 			margin: 20px 10px;
 			background-color: white;
 			padding: 20px 10px;
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 			transition: transform 0.5s;
 			// flex-wrap: nowrap;
-			
 		}
-		.box-abilities:hover{
+		.box-abilities:hover {
 			transform: scale(1.05);
 		}
 	}
-	.fa-solid{
+	.fa-solid {
 		font-size: 36px;
 		color: $main-color;
 	}
-
-
-
-
 }
 
-footer{
+footer {
 	background-color: $main-color;
 }
 @media (max-width: 320px) {
@@ -406,4 +405,6 @@ footer{
 			height: 100px;
 		}
 	}
+
 }
+@media (max-width: 992px) { html, body { overflow-x: hidden; overflow-y: visible; } } 

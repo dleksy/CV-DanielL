@@ -35,6 +35,11 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   background-color: #ebecf2;
+  overflow-x: hidden;
+}
+
+.container {
+  overflow: hidden;
 }
 
 h2 {
@@ -86,6 +91,10 @@ nav .navbar-brand:hover {
 
 .navbar-toggler {
   color: #43d47b;
+}
+
+section {
+  overflow-x: hidden;
 }
 
 header .hero-img {
@@ -155,27 +164,26 @@ header .downloadcv:hover {
 .aboutme .card {
   border: none;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-}
-.aboutme .card-group {
-  overflow: hidden;
 }
 .aboutme .card-title {
   text-transform: uppercase;
   font-weight: bold;
-  overflow: hidden;
 }
 .aboutme .card-text {
   margin-top: 30px;
-  overflow: hidden;
 }
 .aboutme .row {
   margin-top: 30px;
   margin-bottom: 30px;
-  overflow: hidden;
 }
 .aboutme .info-desc {
   font-weight: bold;
+}
+.aboutme .fade-left {
+  overflow-x: hidden;
+}
+.aboutme .fade-right {
+  overflow-x: hidden;
 }
 
 .experience {
@@ -380,5 +388,11 @@ footer {
 @media (max-width: 767px) {
   .experience .logo {
     height: 100px;
+  }
+}
+@media (max-width: 992px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 }/*# sourceMappingURL=style.css.map */
