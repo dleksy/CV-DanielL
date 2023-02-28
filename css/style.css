@@ -199,7 +199,7 @@ header .downloadcv:hover {
 
 .education {
   position: relative;
-  background-image: url(/img/black-g09d47c7da_1920.jpg);
+  background-image: url(../img/black-g09d47c7da_1920.jpg);
   background-attachment: fixed;
 }
 .education ul.timeline {
