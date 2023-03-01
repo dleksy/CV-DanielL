@@ -84,17 +84,9 @@ nav .navbar-brand:hover {
 }
 
 .fa-bars {
-  padding: 15px;
+  padding: 10px;
   color: #43d47b;
   font-size: 24px;
-}
-
-.navbar-toggler {
-  color: #43d47b;
-}
-
-section {
-  overflow-x: hidden;
 }
 
 header .hero-img {
