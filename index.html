@@ -17,9 +17,9 @@
     <script src="https://kit.fontawesome.com/0beb677ed6.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" >
 
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 navbar-strip">
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 navbar-strip">
         <div class="container">
             <a class="navbar-brand" href="#">Daniel Leksy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,9 +28,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#">O mnie</a>
-                    <a class="nav-link" href="#">Doświadczenie</a>
-                    <a class="nav-link" href="#">Wykształcenie</a>
+                    <a class="nav-link active" href="#aboutme">O mnie</a>
+                    <a class="nav-link" href="#experience">Doświadczenie</a>
+                    <a class="nav-link" href="#education">Wykształcenie</a>
                     <a class="nav-link" href="#skills">Umiejętności</a>
                 </div>
             </div>
@@ -177,7 +177,7 @@
                 <div class="container mt-5 mb-5">
 
                     <div class="row">
-                        <div class="col-md-6 offset-md-3">
+                        <div class="col-md-6 offset-md-3" data-aos="zoom-in-down">
                             <ul class="timeline">
                                 <li>
                                     <div class="school">Politechnika Śląska</div>
