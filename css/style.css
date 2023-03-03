@@ -32,7 +32,7 @@
 }
 
 html {
-  scroll-padding-top: 55px;
+  scroll-padding-top: 69px;
 }
 
 .wrapper {
@@ -83,7 +83,7 @@ nav .nav-link:hover {
   color: #43d47b;
 }
 nav .navbar-nav .nav-link.active {
-  color: rgb(70, 173, 70);
+  color: #43d47b;
 }
 nav .navbar-brand {
   font-weight: bold;
@@ -91,6 +91,12 @@ nav .navbar-brand {
 }
 nav .navbar-brand:hover {
   color: white;
+}
+nav .navbar-toggler {
+  border: 1px solid transparent;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .fa-bars {
@@ -390,11 +396,5 @@ footer {
 @media (max-width: 767px) {
   .experience .logo {
     height: 100px;
-  }
-}
-@media (max-width: 992px) {
-  html, body {
-    overflow-x: hidden;
-    overflow-y: visible;
   }
 }/*# sourceMappingURL=style.css.map */

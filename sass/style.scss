@@ -9,7 +9,7 @@
 }
 
 html{
-	scroll-padding-top: 55px;
+	scroll-padding-top: 69px;
 }
 .wrapper{
 	position: relative;
@@ -42,6 +42,7 @@ nav {
 	i {
 		color: $white;
 	}
+	
 	.nav-link {
 		color: $white;
 	}
@@ -57,7 +58,7 @@ nav {
 		color: $main-color;
 	}
 	.navbar-nav .nav-link.active {
-		color: rgb(70, 173, 70);
+		color: $main-color;
 	}
 
 	.navbar-brand {
@@ -66,6 +67,12 @@ nav {
 	}
 	.navbar-brand:hover {
 		color: $white;
+	}
+	.navbar-toggler{
+		border: 1px solid transparent;
+	}
+	.navbar-toggler:focus{
+		box-shadow: none;
 	}
 }
 .fa-bars {
@@ -411,4 +418,4 @@ footer {
 	}
 
 }
-@media (max-width: 992px) { html, body { overflow-x: hidden; overflow-y: visible; } } 
+// @media (max-width: 992px) { html, body { overflow-x: hidden; overflow-y: visible; } } 
