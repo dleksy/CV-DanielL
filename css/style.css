@@ -257,6 +257,7 @@ header .downloadcv:hover {
 }
 .education .school {
   color: white;
+  font-size: 24px;
 }
 .education .education-shadow {
   position: absolute;
@@ -325,6 +326,9 @@ header .downloadcv:hover {
 .skills .sql-bar {
   width: 80%;
 }
+.skills .skill-desc {
+  text-align: left;
+}
 .skills .skill-general .box-abilities {
   margin: 20px 10px;
   background-color: white;
@@ -388,13 +392,12 @@ footer {
     padding-bottom: 15px;
     font-size: 24px;
   }
-  .education .school {
-    font-size: 24px;
-    padding-bottom: 5px;
-  }
 }
 @media (max-width: 767px) {
   .experience .logo {
     height: 100px;
+  }
+  .education .school {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -241,6 +241,7 @@ header {
 	background-attachment: fixed;
 	.school {
 		color: white;
+		font-size: 24px;
 	}
 
 	.education-shadow {
@@ -318,6 +319,9 @@ header {
 	}
 	.sql-bar {
 		width: 80%;
+	}
+	.skill-desc{
+		text-align: left;
 	}
 
 	.skill-general {
@@ -403,12 +407,7 @@ footer {
 			font-size: 24px;
 		}
 	}
-	.education {
-		.school {
-			font-size: 24px;
-			padding-bottom: 5px;
-		}
-	}
+	
 }
 @media (max-width: 767px) {
 	.experience {
@@ -416,6 +415,13 @@ footer {
 			height: 100px;
 		}
 	}
+	.education{
+		.school{
+			font-size: 18px;
+		}
+	}
 
 }
+
+
 // @media (max-width: 992px) { html, body { overflow-x: hidden; overflow-y: visible; } } 
