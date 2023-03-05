@@ -32,7 +32,7 @@
 }
 
 html {
-  scroll-padding-top: 69px;
+  scroll-padding-top: 55px;
 }
 
 .wrapper {
@@ -328,6 +328,7 @@ header .downloadcv:hover {
 }
 .skills .skill-desc {
   text-align: left;
+  padding: 15px;
 }
 .skills .skill-general .box-abilities {
   margin: 20px 10px;
