@@ -32,7 +32,7 @@
 }
 
 html {
-  scroll-padding-top: 55px;
+  scroll-padding-top: 69px;
 }
 
 .wrapper {
@@ -351,15 +351,15 @@ footer {
 
 @media (max-width: 320px) {
   header .hero-img .hero-photo {
-    top: 30%;
+    top: 20%;
   }
   header .hero-img .hero-text {
-    top: 65%;
+    top: 55%;
   }
   header .hero-img .download-box {
-    top: 85%;
+    top: 90%;
   }
-  header .hero-text h2 {
+  header .hero-img .hero-text h2 {
     font-size: 22px;
   }
 }
@@ -374,7 +374,7 @@ footer {
     top: 60%;
   }
   header .download-box {
-    top: 80%;
+    top: 90%;
   }
 }
 @media (min-width: 576px) {
@@ -400,5 +400,29 @@ footer {
   }
   .education .school {
     font-size: 18px;
+  }
+}
+@media (max-height: 600px) and (max-width: 1024px) {
+  header .hero-photo {
+    top: 30%;
+    left: 25%;
+  }
+  header .hero-text {
+    top: 45%;
+  }
+  header .download-box {
+    top: 80%;
+  }
+}
+@media (max-height: 568px) and (max-width: 320px) {
+  header .hero-photo {
+    top: 30%;
+    left: 50%;
+  }
+  header .hero-text {
+    top: 45%;
+  }
+  header .download-box {
+    top: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
