@@ -108,7 +108,7 @@ nav .navbar-toggler:focus {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url(../img/new-york-city-gb7e9317df_1920.jpg);
+  background-image: url(../img/new-york-city-gfd8eea8bc_640.jpg);
   background-size: cover;
   background-position: 0% 98%;
   z-index: 0;
@@ -222,7 +222,7 @@ header .downloadcv:hover {
 
 .education {
   position: relative;
-  background-image: url(../img/black-g09d47c7da_1920.jpg);
+  background-image: url(../img/black-g19434e18b_640.jpg);
   background-attachment: fixed;
 }
 .education ul.timeline {
@@ -424,5 +424,13 @@ footer {
   }
   header .download-box {
     top: 80%;
+  }
+}
+@media (min-width: 992px) {
+  header .hero-img {
+    background-image: url(../img/new-york-city-gb7e9317df_1920.jpg);
+  }
+  .education {
+    background-image: url(../img/black-g09d47c7da_1920.jpg);
   }
 }/*# sourceMappingURL=style.css.map */
