@@ -85,7 +85,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url(../img/new-york-city-gfd8eea8bc_640.jpg);
+		background-image: url(../img/new-york-city-gb7e9317df_1920.jpg);
 		background-size: cover;
 		background-position: 0% 98%;
 		z-index: 0;
@@ -421,47 +421,38 @@ footer {
 	}
 }
 
-@media (max-height: 600px) and (max-width: 1024px){
-	header{
-		.hero-photo{
+@media (max-height: 600px) and (max-width: 1024px) {
+	header {
+		.hero-photo {
 			top: 30%;
 			left: 25%;
 		}
-		.hero-text{
+		.hero-text {
 			top: 45%;
 		}
-		.download-box{
+		.download-box {
 			top: 80%;
 		}
 	}
-	
-
 }
-@media (max-height: 568px) and (max-width: 320px){
-	header{
-		.hero-photo{
+@media (max-height: 568px) and (max-width: 320px) {
+	header {
+		.hero-photo {
 			top: 30%;
 			left: 50%;
 		}
-		.hero-text{
+		.hero-text {
 			top: 45%;
 		}
-		.download-box{
+		.download-box {
 			top: 80%;
 		}
 	}
-	
-
 }
 
 @media (min-width: 992px) {
-	header{
-		.hero-img{
-			background-image: url(../img/new-york-city-gb7e9317df_1920.jpg);
-		}
-	}
-	.education{
+	.education {
 		background-image: url(../img/black-g09d47c7da_1920.jpg);
 	}
-	}
+}
 // @media (max-width: 992px) { html, body { overflow-x: hidden; overflow-y: visible; } }
